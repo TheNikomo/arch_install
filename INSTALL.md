@@ -104,7 +104,8 @@ hosts file:
     # End of file
 
 
-###Enable DHCP service, then we have DHCP automatically when we reboot into the installation
+###Enable DHCP service
+This will give us DHCP automatically when we reboot into the installed base system
 
     systemctl enable dhcpcd.service
 
