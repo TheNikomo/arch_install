@@ -131,10 +131,10 @@ mode "resize" {
         bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 6 px or 2 ppt
+        bindsym Up resize grow height 6 px or 2 ppt
+        bindsym Down resize shrink height 6 px or 2 ppt
+        bindsym Right resize grow width 6 px or 2 ppt
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
@@ -153,6 +153,7 @@ bar {
 exec nm-applet
 exec pa-applet
 exec feh --bg-scale ~/bg.jpg
+exec xset m 9/3 0
 
 for_window [class="Xfce4-notifyd"] floating enable; border none; focus mode_toggle
 for_window [class="Steam"] border none
@@ -160,3 +161,5 @@ for_window [class="Steam"] border none
 bindsym Print exec xfce4-screenshooter -s ~/Screenshots/ -f
 bindsym Mod1+Print exec xfce4-screenshooter -s ~/Screenshots/ -w
 bindsym Shift+Print exec xfce4-screenshooter -s ~/Screenshots/ -r
+
+bindsym $mod+m exec chromium
