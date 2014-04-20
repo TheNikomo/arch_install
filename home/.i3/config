@@ -161,4 +161,7 @@ for_window [class="^Chrome$" title=" - Chromium$"] border none
 for_window [title="Terminal$"] border none
 for_window [title="- Sublime Text$"] border none
 
+bindsym Print exec import -window root ~/Screenshots/$(date +%F-%H-%M-%S).jpg
+bindsym $mod+Print exec import -window root ~/Screenshots/$(date +%F-%H-%M-%S).jpg
+
 bindsym $mod+m exec chromium
