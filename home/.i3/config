@@ -157,9 +157,8 @@ exec xset m 9/3 0
 
 for_window [class="Xfce4-notifyd"] floating enable; border none; focus mode_toggle
 for_window [class="Steam"] border none
-
-bindsym Print exec xfce4-screenshooter -s ~/Screenshots/ -f
-bindsym Mod1+Print exec xfce4-screenshooter -s ~/Screenshots/ -w
-bindsym Shift+Print exec xfce4-screenshooter -s ~/Screenshots/ -r
+for_window [class="^Chrome$" title=" - Chromium$"] border none
+for_window [title="Terminal$"] border none
+for_window [title="- Sublime Text$"] border none
 
 bindsym $mod+m exec chromium
