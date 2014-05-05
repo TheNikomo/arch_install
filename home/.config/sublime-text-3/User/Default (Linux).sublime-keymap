@@ -1,0 +1,6 @@
+[
+    { "keys": ["ctrl+shift+p"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+    { "keys": ["§"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+    { "keys": ["alt+enter"], "command": "auto_complete" },
+
+]

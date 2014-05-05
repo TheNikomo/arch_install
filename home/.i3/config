@@ -154,10 +154,13 @@ exec nm-applet
 exec pa-applet
 exec feh --bg-scale ~/bg.jpg
 exec xset m 9/3 0
+#exec compton --config ~/.config/compton.conf -CGb
 
 for_window [class="Xfce4-notifyd"] floating enable; border none; focus mode_toggle
 for_window [class="Steam"] border none
-for_window [class="^Chrome$" title=" - Chromium$"] border none
+for_window [title=" - Google Chrome$"] border none
+for_window [title="Mozilla Firefox$"] border none
+for_window [title="Mozilla Thunderbird$"] border none
 for_window [title="Terminal$"] border none
 for_window [title="- Sublime Text$"] border none
 

@@ -1,0 +1,21 @@
+{
+	"color_scheme": "Packages/Colorsublime-Themes/ant.tmTheme",
+	"draw_white_space": "selection",
+	"font_face": "Source Code Pro",
+	"font_size": 8,
+	"ignored_packages":
+	[
+		"Markdown",
+		"Vintage"
+	],
+	"rulers":
+	[
+		80
+	],
+	"scroll_speed": 0,
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"trim_automatic_white_space": "true",
+	"trim_trailing_white_space_on_save": "true",
+	"wrap_width": 80
+}
