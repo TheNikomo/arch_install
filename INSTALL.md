@@ -129,7 +129,7 @@ Add "encrypt" before "filesystems" in HOOKS, if using LVM you also need to add "
     pacman -S grub
     grub-install --target=i386-pc --recheck /dev/sda
 
-Add to GRUB_CMDLINE_LINUX_DEFAULT the following: cryptdevice=/dev/sda2:root
+Add to GRUB_CMDLINE_LINUX_DEFAULT the following: cryptdevice=/dev/sda2:root:allow-discards
 
     nano /etc/default/grub
     grub-mkconfig -o /boot/grub/grub.cfg
